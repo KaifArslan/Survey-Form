@@ -4,51 +4,54 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
   <title>Kaif's Survey</title>
 </head>
 <body>
-  <h1>Kaif's Survey Form</h1>
+  <h1 id="title">Kaif's Survey Form</h1>
+  <p id="description">This is the description</p>
   <div>
-    <form>
-      <label>Name <input type="text" required></label>
-      <label>Email <input type="email" required></label>
-      <label>Age <input type="Age"></label>
-      <label>Which option best describes your current role?
-        <select>
-          <option>Select the role</option>
-          <option value=""></option>
-          <option value=""></option>
-          <option value=""></option>
-          <option value=""></option>
-          <option value=""></option>
+    <form id="survey-form">
+      <label for="name" id="name-label">Name <input placeholder="Kaif Arslan" type="text" id="name" required></label>
+      <label for="email" id="email-label">Email <input placeholder="email@emaildomain.com" id="email" type="email" required></label>
+      <label for="number" id="number-label">Age <input placeholder="min-age: 10" id="number" min=10 max=100 type="number"></label>
+      <label>Which is the best technology you are interested in?
+        <select id="dropdown">
+          <option disabled>Select the role</option>
+          <option value="">Web </option>
+          <option value="">Ai</option>
+          <option value="">Software Development</option>
+          <option value="">Mobile App Development</option>
+          <option value="">Others</option>
         </select>
       </label>
       <label for="">
-        Would you recommend freeCodeCamp to a friend?
-        <label for=""><input type="radio" name="" id=""></label>
-        <label for=""><input type="radio" name="" id=""></label>
-        <label for=""><input type="radio" name="" id=""></label>
+        Did you like this form 
+        <label for="yes">Yes<input value=2 type="radio" name="yes" id="yes"></label>
+        <label for="no">No<input value=1 type="radio" name="yes" id="no"></label>
+        <label for="maybe">Maybe<input value=3 type="radio" name="maybe" id="maybe" name="yes"></label>
       </label>
-      <label>What would you like to see improved? (Check all that apply)
-        <label for="">
-          <input type="checkbox" name="" id="">
+      <label>I'm interested and have skills in Web Development. What do you think I should learn other than that?
+        <label for="">AI
+          <input type="checkbox" value=0 >
         </label>
-        <label for="">
-          <input type="checkbox" name="" id="">
+        <label for="">Software Testing
+          <input type="checkbox" value=1>
         </label>
-        <label for="">
-          <input type="checkbox" name="" id="">
+        <label for="">DevOps
+          <input type="checkbox" value=2 >
         </label>
-        <label for="">
-          <input type="checkbox" name="" id="">
+        <label for="">Animation
+          <input type="checkbox" value=3 >
         </label>
-        <label for="">
-          <input type="checkbox" name="" id="">
+        <label for="">Everything related to tech
+          <input type="checkbox"value=4 >
         </label>
       </label>
       <label for="">Any comments or suggestions? 
         <textarea name="" id="" cols="30" rows="10">What you'll write here</textarea>
       </label>
+      <button type="submit" id="submit">Submit</button>
     </form>
   </div>
 </body>
