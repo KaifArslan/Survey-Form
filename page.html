@@ -12,47 +12,56 @@
   <p id="description">This is the description</p>
   <div>
     <form id="survey-form">
+      <fieldset>
       <label for="name" id="name-label">Name <input placeholder="Kaif Arslan" type="text" id="name" required></label>
-      <label for="email" id="email-label">Email <input placeholder="email@emaildomain.com" id="email" type="email" required></label>
+      <label for="email" id="email-label">Email<input placeholder="email@emaildomain.com" id="email" type="email" required>      
+      </label>
       <label for="number" id="number-label">Age <input placeholder="min-age: 10" id="number" min=10 max=100 type="number"></label>
       <label>Which is the best technology you are interested in?
         <select id="dropdown">
           <option disabled>Select the role</option>
-          <option value="">Web </option>
-          <option value="">Ai</option>
-          <option value="">Software Development</option>
-          <option value="">Mobile App Development</option>
+          <option >Web </option>
+          <option >Ai</option>
+          <option >Software Development</option>
+          <option >Mobile App Development</option>
           <option value="">Others</option>
         </select>
       </label>
+      </fieldset>
+      <fieldset>
       <label for="">
-        Did you like this form</label> 
-        <label for="yes">Yes<input value=2 type="radio" name="yes" id="yes"></label>
-        <label for="no">No<input value=1 type="radio" name="yes" id="no"></label>
-        <label for="maybe">Maybe<input value=3 type="radio" id="maybe" name="yes">
+        Did you like the design of this form</label> 
+        <label for="yes"><input value=2 type="radio" name="yes" id="yes">Yes</label>
+        <label for="no"><input value=1 type="radio" name="yes" id="no">No</label>
+        <label for="maybe"><input value=3 type="radio" id="maybe" name="yes">Maybe
       </label>
+    </fieldset>
+    <fieldset>
       <label>I'm interested and have skills in Web Development. What do you think I should learn other than that?
-        <label for="">AI
-          <input type="checkbox" value=0 >
+        <label for="ai">
+          <input type="checkbox" id="ai" value=0 >AI
         </label>
-        <label for="">Software Testing
-          <input type="checkbox" value=1>
+        <label for="testing">
+          <input type="checkbox" id="testing" value=1>Software Testing
         </label>
-        <label for="">DevOps
-          <input type="checkbox" value=2 >
+        <label for="devops">
+          <input type="checkbox" id="devops" value=2 >DevOps
         </label>
-        <label for="">Animation
-          <input type="checkbox" value=3 >
+        <label for="animation">
+          <input type="checkbox" id="animation" value=3 >Animation
         </label>
-        <label for="">Everything related to tech
-          <input type="checkbox"value=4 >
+        <label for="everything">
+          <input type="checkbox" value=4 id="everything">Everything related to tech
         </label>
       </label>
+    </fieldset>
+    <fieldset>
       <label for="">Any comments or suggestions? 
-        <textarea name="" id="" cols="30" rows="10">What you'll write here</textarea>
+        <textarea name="" id="" cols="30" rows="5">What you'll write here</textarea>
       </label>
       <button type="submit" id="submit">Submit</button>
     </form>
+  </fieldset>
   </div>
 </body>
 </html>
